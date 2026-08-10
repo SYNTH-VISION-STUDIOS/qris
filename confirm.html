@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Konfirmasi — QPay</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+<div class="app-shell">
+  <header class="simple-header">
+    <a href="scan.html">‹</a><h5>Konfirmasi Pembayaran</h5><span></span>
+  </header>
+
+  <main class="container py-4">
+    <div class="merchant-card">
+      <div class="merchant-logo">M</div>
+      <div><small class="text-muted">Merchant</small><h5 id="merchant">Toko Demo</h5></div>
+    </div>
+
+    <div class="amount-card">
+      <label>Nominal pembayaran</label>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text">Rp</span>
+        <input id="amount" class="form-control" type="number" min="1000" placeholder="0">
+      </div>
+      <small class="text-muted">Masukkan nominal yang ingin dibayar.</small>
+    </div>
+
+    <div class="detail-card">
+      <div><span>Merchant</span><b id="merchant2">Toko Demo</b></div>
+      <div><span>Metode</span><b>QRIS</b></div>
+      <div><span>Status</span><b class="text-primary">Prototype</b></div>
+    </div>
+
+    <button class="primary-btn" onclick="pay()">Bayar Sekarang</button>
+  </main>
+</div>
+</body>
+</html>
